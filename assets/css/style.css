@@ -213,7 +213,6 @@ hr {
     flex-basis: 25%;
     padding: 0 5px;
     display: inline-block;
-    height: 580px;
 }
 
 .food-item .food-image {
@@ -235,6 +234,12 @@ hr {
     display: block;
     font-size: 15px;
     text-align: center;
+}
+
+.food-item-hr{
+    margin-top: 0px ;
+    margin-bottom: 20px;
+    display: none;
 }
 
 /* list numbers */
@@ -356,5 +361,78 @@ hr {
 
 .tag-item:first-child{
     background-color: #000;
-    font-size: 20px;
+    font-size: 16px;
 }
+
+@media (max-width: 739px ) {
+    .header-items{
+        left: 10px;
+        right: 10px;
+    }
+
+    .content{
+        margin: 80px 10px 0px 10px;
+    }
+
+    .list-foods .food-item{
+        flex-basis: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+    .footer .footer-header{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .footer-info-header{
+        margin-top: 0px!important;
+    }
+    .food-item-hr {
+        display: block;
+    }
+
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+    .list-foods .food-item{
+        flex-basis: 50%;
+        margin-bottom: 40px;
+    }
+     .footer {
+        margin: 20px 50px;
+    }
+
+    .footer-post-item {
+        padding: 10px;
+    }
+    .footer-post-image{
+        width: 30%;
+        margin-right: 10px;
+       
+    }
+}
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 480px){
+    .list-foods {
+        justify-content: center;
+    }
+    .list-foods .food-item{
+        flex-basis: 100%;
+    }
+    .header-items{
+        
+        left: 5px;
+        right: 5px;
+      
+    }
+    .content{
+        margin: 20px 5px;
+    }
+} */
